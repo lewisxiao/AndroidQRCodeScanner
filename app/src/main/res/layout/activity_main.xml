@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".MainActivity">-->
+
+<!--</LinearLayout>-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.journeyapps.barcodescanner.DecoratedBarcodeView-->
+        <!--android:id="@+id/zxing_barcode_scanner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:zxing_scanner_layout="@layout/custom_barcode_scanner">-->
+    <!--</com.journeyapps.barcodescanner.DecoratedBarcodeView>-->
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/dbv_custom"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        app:zxing_preview_scaling_strategy="fitXY" />
+
+    <!--<com.lewisxiao.qrcodescanner.CustomViewfinderView-->
+        <!--android:id="@+id/zxing_custom_viewfinder_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+    <!-- 其他的按钮什么的都忽略 -->
+</RelativeLayout>
